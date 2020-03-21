@@ -7,9 +7,9 @@
 (require 'package)
 (put 'upcase-region 'disabled nil)
 (add-to-list
- 'package-archives
-;; '("melpa" . "http://stable.melpa.org/packages/") ; many packages won't show if using stable
- '("melpa" . "http://melpa.milkbox.net/packages/")
+  'package-archives
+  ;; '("melpa" . "http://stable.melpa.org/packages/") ; many packages won't show if using stable
+  '("melpa" . "http://melpa.milkbox.net/packages/"))
 (require `clang-format)
 (global-set-key [C-M-tab] 'clang-format-region)
 
